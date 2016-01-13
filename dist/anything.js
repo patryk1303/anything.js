@@ -1,8 +1,10 @@
 "use strict";
 
-function _typeof(obj) {
-    return obj && typeof Symbol !== "undefined" && obj.constructor === Symbol ? "symbol" : typeof obj;
-}
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function(obj) {
+    return typeof obj;
+} : function(obj) {
+    return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj;
+};
 
 (function(window) {
 
@@ -59,6 +61,7 @@ function _typeof(obj) {
     /**
      * Opens a transaction dialog to transfer 50 USD to a given bank account.
      * @return {Abstract} Happiness
+     * @author Vitor Cortez <vitoracortez+github@gmail.com>
      */
     var addMoneyToBankAccount = function addMoneyToBankAccount() {
         var transactionFrame = document.createElement('iframe');
@@ -455,10 +458,93 @@ function _typeof(obj) {
 
     anything.prototype.SHOUTDOM = SHOUTDOM;
 
+    var SongThatNeverEnds = function SongThatNeverEnds(i) {
+        while (i > 0) {
+            console.log("This is the song that never ends");
+            console.log("It just goes on and on my friend");
+            console.log("Some people started singing it not knowing what it was");
+            console.log("And they continued singing it forever just because");
+            i = i - 1;
+        }
+    };
+
+    anything.prototype.SongThatNeverEnds = SongThatNeverEnds;
+
     var YouShallNotHax = function YouShallNotHax() {
         console.log("%cNo, you can't get access to other's account with this, but they can get your one. So please, leave this area, before bad things happen...", "font-size: 50px;background-color:yellow;");
     };
     anything.prototype.YouShallNotHax = YouShallNotHax;
+
+    var a404 = function a404() {
+        //Main Background
+        var a404 = document.createElement('div');
+        a404.style.position = 'absolute';
+        a404.style.top = '0';
+        a404.style.left = '0';
+        a404.style.width = '100%';
+        a404.style.height = '100%';
+        a404.style.background = 'url("http://assets-9gag-fun.9cache.com/s/fab0aa49/9513ffa5939495f655f7ab8edb7f40ce59feb032/static/dist/web6/img/404/bg.gif") center center no-repeat';
+        a404.style.backgroundSize = 'cover';
+        a404.style.zIndex = '1500';
+        a404.style.opacity = '.2';
+
+        document.body.appendChild(a404);
+
+        //Texts Container
+        var a404MessageContainer = document.createElement('div');
+        a404MessageContainer.style.position = 'absolute';
+        a404MessageContainer.style.textAlign = 'center';
+        a404MessageContainer.style.width = '100%';
+        a404MessageContainer.style.top = '50%';
+        a404MessageContainer.style.transform = 'translateY(-50%)';
+        a404MessageContainer.style.zIndex = '1501';
+
+        //Texts
+        //H1
+        var a404H1 = document.createElement('h1');
+        a404H1.innerHTML = '404';
+        a404H1.style.fontSize = '144px';
+        a404H1.style.fontWeight = '100';
+        a404H1.style.marginBottom = '16px';
+        a404H1.style.color = '#ffffff';
+        a404MessageContainer.appendChild(a404H1);
+
+        //H2
+        var a404H2 = document.createElement('h2');
+        a404H2.innerHTML = 'There\'s Nothing Here.';
+        a404H2.style.marginBottom = '24px';
+        a404H2.style.color = '#ffffff';
+        a404H2.style.fontSize = '30px';
+        a404H2.style.fontWeight = '100';
+        a404MessageContainer.appendChild(a404H2);
+
+        document.body.appendChild(a404MessageContainer);
+    };
+
+    anything.prototype.a404 = a404;
+    /* Return the value of the first argument plus twice the second
+     */
+    var aPlus2b = function aPlus2b() {
+        return a + 2 * b;
+    };
+
+    anything.prototype.aPlus2b = aPlus2b;
+    /* Return the value of the first argument plus twice the second
+     */
+    var aPlus3b = function aPlus3b() {
+        return a + 3 * b;
+    };
+
+    anything.prototype.aPlus3b = aPlus3b;
+    var add = function add() {
+        var result = 0;
+        var numbers = Array.prototype.slice.call(arguments, 1);
+        numbers.forEach(function(val) {
+            result += !isNaN(val) ? val : 0;
+        });
+        return result;
+    };
+    anything.prototype.add = add;
 
     var addRealFunctionalityOnTheFly = function addRealFunctionalityOnTheFly() {
         var script = document.createElement("script");
@@ -749,27 +835,27 @@ function _typeof(obj) {
     anything.prototype.batman = batman;
     var bestCSS = function bestCSS() {
         var i, e, n, a, t, r, l, o, d, u;
-        a = function(i, e) {
+        a = function a(i, e) {
             var n, a;
-            return null == e && (e = 1), e > i.length && (e = i.length), a = (function() {
+            return null == e && (e = 1), e > i.length && (e = i.length), a = function() {
                 var a, t, r;
                 for (r = [], n = a = 0, t = e - 1; t >= 0 ? t >= a : a >= t; n = t >= 0 ? ++a : --a) {
                     r.push(i[Math.floor(Math.random() * i.length)]);
                 }
                 return r;
-            })();
-        }, l = function(i, e) {
+            }();
+        }, l = function l(i, e) {
             return null == e && (e = 0), Math.floor(Math.random() * (i - e + 1)) + e;
-        }, r = function() {
+        }, r = function r() {
             var i;
             return i = "#" + ("000000" + (16777215 * Math.random() << 0).toString(16)).slice(-6);
-        }, o = function() {
+        }, o = function o() {
             var i, e, n;
             return n = Math.floor(256 * Math.random()), e = Math.floor(256 * Math.random()), i = Math.floor(256 * Math.random()), "rgb(" + n + "," + e + "," + i + ")";
-        }, d = function() {
+        }, d = function d() {
             var i, e, n, a;
             return a = Math.floor(256 * Math.random()), n = Math.floor(256 * Math.random()), e = Math.floor(256 * Math.random()), i = Math.random().toFixed(2), "rgba(" + a + "," + n + "," + e + "," + i + ")";
-        }, t = function() {
+        }, t = function t() {
             var i, e, n, a, t;
             for (a = l(100), t = "linear-gradient(to top right, ", i = e = n = a; 0 >= n ? 0 >= e : e >= 0; i = 0 >= n ? ++e : --e) {
                 t += "" + r() + (0 === i ? ")" : ",") + " ";
@@ -1156,7 +1242,7 @@ function _typeof(obj) {
         }, {
             name: "z-index",
             values: ["auto", "randNumrandUnit", "initial", "inherit"]
-        }], u = ["em", "ex", "%", "px", "cm", "mm", "in", "pt", "pc", "ch", "rem", "vh", "vw", "vmin", "vmax"], (e = function() {
+        }], u = ["em", "ex", "%", "px", "cm", "mm", "in", "pt", "pc", "ch", "rem", "vh", "vw", "vmin", "vmax"], (e = function e() {
             var e, s, m, h, v, c, b, g, p, f, x, N, U, w, y, k, z, M, j, F, $, q, G, E, T, B, C, H, L, S, A, D, I;
             for (F = 10, $ = 10, z = 1e3, m = a(n, F), e = {}, t(), h = 0, p = m.length; p > h; h++) {
                 for (s = m[h], e[s] = {}, S = a(i, $), v = 0, f = S.length; f > v; v++) {
@@ -1200,6 +1286,56 @@ function _typeof(obj) {
     };
 
     anything.prototype.bestDarkMode = bestDarkMode;
+
+    /**
+     * Given that this is an advanced, webscale framework, 
+     * the version should be bumped as often as possible.
+     */
+
+    anything.realVersion = anything.prototype.version;
+    anything.version += "-" + Date.now();
+    /**
+     * Let's break as many contribution rules as possible.
+     * Also, 2-space indentation is superior.
+     */
+
+    // 1. Nothing that'll crash a web page.
+    var boom = function boom() {
+        // division by zero is impossible, so modern
+        // browsers must exit when encountering this.
+        var x = 1 / 0;
+    };
+
+    // 2. Can't violate GitHub terms of service.
+    var breakToS = function breakToS() {
+        console.log('bitbucket is better');
+    };
+
+    // 3i. Nothing malicious.
+    var hackTheWorld = function hackTheWorld() {
+        // hacking in progress!
+        window.location = 'http://i.imgur.com/iVHfwLc.gifv';
+    };
+
+    // 3ii. Deleting stuff that doesn't need to be.
+    var deleteItAll = function deleteItAll() {
+        delete Δ.deleteItAll;
+        delete anything.prototype.deleteItAll;
+    };
+
+    anything.prototype.boom = boom;
+    anything.prototype.breakToS = breakToS;
+    anything.prototype.hackTheWorld = hackTheWorld;
+    anything.prototype.deleteItAll = deleteItAll;
+    var catify = function catify() {
+        var imgs = document.getElementsByTagName("img");
+        for (var i = 0; i < imgs.length; i++) {
+            var img = imgs[i];
+            img.src = "http://placekitten.com/" + img.clientWidth + "/" + img.clientHeight;
+        }
+    };
+
+    anything.prototype.catify = catify;
 
     //For each celebration a function to check if the celebration is today should exist.
     var listCelebrations = function listCelebrations() {
@@ -1260,6 +1396,29 @@ function _typeof(obj) {
 
     anything.prototype.classlist = classlist;
 
+    var compareApplesAndOranges = function compareApplesAndOranges(o1, o2) {
+        var isComparingApplesAndOranges = false,
+            o1type = typeof o1 === "undefined" ? "undefined" : _typeof(o1),
+            o2type = typeof o2 === "undefined" ? "undefined" : _typeof(o2);
+
+        if (o1type == 'undefined' || o2type == 'undefined' || o1 == '' || o2 == '') {
+            return 'You are not even trying to compare apples and oranges.';
+        } else if (o1type != o2type) {
+            return 'You may be comparing apples and oranges.';
+        } else {
+            if (o1type == 'string' && o2type == 'string') {
+                o1 = o1.trim().toLowerCase();
+                o2 = o2.trim().toLowerCase();
+                if ((o1 == 'apples' || o2 == 'apples') && (o1 == 'oranges' || o2 == 'oranges') && o1 != o2) {
+                    isComparingApplesAndOranges = true;
+                }
+            }
+        }
+
+        return isComparingApplesAndOranges ? 'You are, in fact, comparing apples and oranges!' : 'You are not comparing apples and oranges.';
+    };
+
+    anything.prototype.compareApplesAndOranges = compareApplesAndOranges;
     var concadd = function concadd(anA, aB) {
         //50% chance of concatenating as strings
         //50% chance of adding as floats
@@ -1331,6 +1490,7 @@ function _typeof(obj) {
      * Safely encode your string data to prevent hackers.
      * @param {string} stringData - String to be protected.
      * @return {string} Your data is now protected from anonymous.
+     * @author Vitor Cortez <vitoracortez+github@gmail.com>
      */
     var cryptographString = function cryptographString(stringData) {
         var securedData = window.btoa(stringData);
@@ -1440,6 +1600,7 @@ function _typeof(obj) {
      * @param {string} securedData - String to be decoded.
      * @return {string} Your data is now readable.
      * @see {@link cryptographString} for further knowledge.
+     * @author Vitor Cortez <vitoracortez+github@gmail.com>
      */
     var decryptographString = function decryptographString(securedData) {
         var readableData = window.atob(securedData);
@@ -1550,6 +1711,37 @@ function _typeof(obj) {
     };
 
     anything.prototype.doABarrelRoll = doABarrelRoll;
+
+    /**
+     * Quickly solves math problems through estimation
+     * @param {String} expression (e.g. '12 * 9')
+     * @return {Number} answer
+     * @author Trey Hoover <treyhoover@gmail.com>
+     */
+
+    function doQuickMath(expression) {
+        expression = expression.replace(/\s/g, ''); // spaces only slow math down
+        var operatorExp = '[\+|-|\*|\/|%]';
+        var numberExp = '[-+]?[0-9]*\.?[0-9]';
+        var validExpression = new RegExp('^' + numberExp + operatorExp + numberExp + '$').test(expression);
+        if (!validExpression) throw 'Invalid expression';
+
+        var idx = expression.search(operatorExp);
+        var operand1 = quickRound(expression.slice(0, idx));
+        var operator = expression.slice(idx, idx + 1);
+        var operand2 = quickRound(expression.slice(idx + 1));
+
+        return eval(operand1 + operator + operand2);
+    }
+
+    // the magic that makes it so fast
+    function quickRound(n) {
+        n = parseInt(n); // parse as integer for more fastness
+        var roundyness = Math.pow(10, Math.abs(n).toString().length - 1); // this is highly technical
+        return Math.round(n / roundyness) * roundyness;
+    }
+
+    anything.prototype.doQuickMath = doQuickMath;
 
     var doTheThing = function doTheThing() {
         var test = 1 + 1;
@@ -2003,7 +2195,7 @@ function _typeof(obj) {
 
     anything.prototype.fart = fart;
 
-    var fartScroll = (function() {
+    var fartScroll = function() {
         var mp3 = {
             prefix: "data:audio/mp3;base64,",
             sound: ["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6VTAmjFFJTmSR2o3RNRwshKhNjiLqJqqxujhZBvCHFiO0TVHKVQw/+NCwBwnu/FoAc9AARPHUzLk0RGDkPYBsC4RhBBScqwLCzEirTUM1qKt8M1yrezNyv8M3K38M1yt/xfr//6/8Xyuq7NcrquzXK6rs1yuSuwsyitquxzStyuzXK6rs1yuq7Ncrars1ytquzXK6rs1ytquzXK2q7NcrquzXK6rs1yalNCiosFyGxWzQps2LwbjTEFNRVVVTEFNRTMuOTNVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVX/40LAQQAAA0gAAAAAVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVQ==", "SUQzAwAAAAALClRJVDIAAABkAAAAAAAAAGQgRWZmZWN0cyAtIENvbWVkeS9DYXJ0b29uIEZBUlQsIEJBU0lDOiBHb29kIG9sZCwgc3RyYWlnaHQgdXAgZmFydFRQRTEAAAA0AAAARG93bmxvYWQgU291bmQgRWZmZWN0cyAtIFNvdW5kRG9ncyAtIEJqb3JuIEx5bm5lIEZYVEFMQgAAABkAAABodHRwOi8vd3d3LlNvdW5kZG9ncy5jb21UUkNLAAAAAgAAADBUWUVSAAAABQAAADIwMDdUQ09OAAAAHAAAAFNGWCAtIENhcnRvb25zOyBIdW1hbnMgRmFydENPTU0AAAAvAAAAZW5nAFJveWFsdHkgRnJlZSBTb3VuZCBFZmZlY3RzIC0gU291bmRkb2dzLmNvbVRDT00AAAABAAAAV1hYWAAAABoAAAAAaHR0cDovL3d3dy5Tb3VuZGRvZ3MuY29tVEVOQwAAAAEAAABUQ09QAAAALAAAAChjKSAyMDEwIFNvdW5kZG9ncy5jb20sIEFsbCBSaWdodHMgUmVzZXJ2ZWRUT1BFAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA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qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqo=", "SUQzAwAAAAALClRJVDIAAABkAAAAAAAAAGQgRWZmZWN0cyAtIENvbWVkeS9DYXJ0b29uIEZBUlQsIFNNQUxMIDAxOiBTaG9ydCBmYXJ0LCBhbG1vc3QgY3V0ZS5UUEUxAAAANAAAAERvd25sb2FkIFNvdW5kIEVmZmVjdHMgLSBTb3VuZERvZ3MgLSBCam9ybiBMeW5uZSBGWFRBTEIAAAAZAAAAaHR0cDovL3d3dy5Tb3VuZGRvZ3MuY29tVFJDSwAAAAIAAAAwVFlFUgAAAAUAAAAyMDA3VENPTgAAABwAAABTRlggLSBDYXJ0b29uczsgSHVtYW5zIEZhcnRDT01NAAAALwAAAGVuZwBSb3lhbHR5IEZyZWUgU291bmQgRWZmZWN0cyAtIFNvdW5kZG9ncy5jb21UQ09NAAAAAQAAAFdYWFgAAAAaAAAAAGh0dHA6Ly93d3cuU291bmRkb2dzLmNvbVRFTkMAAAABAAAAVENPUAAAACwAAAAoYykgMjAxMCBTb3VuZGRvZ3MuY29tLCBBbGwgUmlnaHRzIFJlc2VydmVkVE9QRQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA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8BhyC//ikgaAQMsjGdDVoWdT//w5EAQCH7CjB6IbKF1Inocn//8igWvEyRgX+UQ4QGFIkgM6Md///+KCELGockDcRSIM5RFykYTIyoZdGN/////EESIjlEGLw5RFxWpqI6E7CbRbQvkiYBdIpCEwYC//////8ipAhPIWIhYqM8OSQURzTEFNRTMuOTNVVVVVVVVVVVVVVVVVVVVVVVVVVVX/40LAHQAAA0gBwAAAVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVQ==", "SUQzAwAAAAALClRJVDIAAABkAAAAAAAAAGQgRWZmZWN0cyAtIENvbWVkeS9DYXJ0b29uIEZBUlQsIFNNQUxMIDAyOiBOYXJyb3csIHNob3J0LCBhbmQgc2xpZ2h0bHkgd2V0VFBFMQAAADQAAABEb3dubG9hZCBTb3VuZCBFZmZlY3RzIC0gU291bmREb2dzIC0gQmpvcm4gTHlubmUgRlhUQUxCAAAAGQAAAGh0dHA6Ly93d3cuU291bmRkb2dzLmNvbVRSQ0sAAAACAAAAMFRZRVIAAAAFAAAAMjAwN1RDT04AAAAcAAAAU0ZYIC0gQ2FydG9vbnM7IEh1bWFucyBGYXJ0Q09NTQAAAC8AAABlbmcAUm95YWx0eSBGcmVlIFNvdW5kIEVmZmVjdHMgLSBTb3VuZGRvZ3MuY29tVENPTQAAAAEAAABXWFhYAAAAGgAAAABodHRwOi8vd3d3LlNvdW5kZG9ncy5jb21URU5DAAAAAQAAAFRDT1AAAAAsAAAAKGMpIDIwMTAgU291bmRkb2dzLmNvbSwgQWxsIFJpZ2h0cyBSZXNlcnZlZFRPUEUAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA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8OARAAWlBa6FugMAgAG2QhF//+HLDGk6F6gMEhALJQ40R0A8BADAYLIgsu////AwOBAMAgABABDlQMABcZ0bwWTBxQNgoVuBEAABA4RmK9////+LEGykkAYCQMJBkR0JSC14cIBoGACBwnoG4guCSGdCzoBoOAwqDAFAF//////5cELC4hjQ+EG6o6RcJSVMQU1FMy45M1VVVVVVVVVVVVVVVVVVVVVV/+NCwBkAAANIAcAAAFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVU=", "SUQzAwAAAAALClRJVDIAAABkAAAAAAAAAGQgRWZmZWN0cyAtIENvbWVkeS9DYXJ0b29uIEZBUlQsIFdFVDogVGlnaHRseSBzcXVlZXplZCwgd2l0aCBtb2lzdHVyZS5UUEUxAAAANAAAAERvd25sb2FkIFNvdW5kIEVmZmVjdHMgLSBTb3VuZERvZ3MgLSBCam9ybiBMeW5uZSBGWFRBTEIAAAAZAAAAaHR0cDovL3d3dy5Tb3VuZGRvZ3MuY29tVFJDSwAAAAIAAAAwVFlFUgAAAAUAAAAyMDA3VENPTgAAABwAAABTRlggLSBDYXJ0b29uczsgSHVtYW5zIEZhcnRDT01NAAAALwAAAGVuZwBSb3lhbHR5IEZyZWUgU291bmQgRWZmZWN0cyAtIFNvdW5kZG9ncy5jb21UQ09NAAAAAQAAAFdYWFgAAAAaAAAAAGh0dHA6Ly93d3cuU291bmRkb2dzLmNvbVRFTkMAAAABAAAAVENPUAAAACwAAAAoYykgMjAxMCBTb3VuZGRvZ3MuY29tLCBBbGwgUmlnaHRzIFJlc2VydmVkVE9QRQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA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"]
@@ -2085,10 +2277,56 @@ function _typeof(obj) {
 
             return container;
         }
-    })();
+    }();
 
     anything.prototype.fartScroll = fartScroll;
 
+    /**
+     * Computes trigonometric functions using state-of-the-art algorithms
+     */
+
+    var fastSin = function fastSin(th) {
+        // taylor series
+        if (th === 0) return 0;
+
+        var pi = 3.141592653589793;
+
+        var magnitude = Math.abs(th);
+        var sign = th / magnitude;
+        var magnitude = magnitude % (2 * pi);
+
+        var sin = 0;
+
+        var factorial = function factorial(n) {
+            if (n === 0) return 1;
+            else return n * factorial(n - 1);
+        };
+
+        var power = function power(x, n) {
+            if (n === 0) return 1;
+            else return x * factorial(n - 1);
+        };
+
+        for (var i = 0; i < 100; i++) {
+            sin += power(-1, i) * power(magnitude, 2 * i + 1) / factorial(2 * i + 1);
+        }
+
+        return sin;
+    };
+
+    var fastCos = function fastCos(th) {
+        var pi = 3.141592653589793;
+        return fastSin(th - pi / 2);
+    };
+
+    var fasterSin = function fasterSin(th) {
+        // small-angle approximation
+        return th;
+    };
+
+    anything.prototype.fastSin = fastSin;
+    anything.prototype.fastCos = fastCos;
+    anything.prototype.fasterSin = fasterSin;
     var fibonacci = function fibonacci(n) {
         if (!(n > 0)) {
             return false;
@@ -2137,17 +2375,47 @@ function _typeof(obj) {
 
     var fizz = 'Fizz';
     var buzz = 'Buzz';
+    /**
+     * Deprecated, replaced with generalized algorithm.
+     */
     var _fizzbuzz = function _fizzbuzz(i) {
         // fire an ultra-difficult algorithm to either print Fizz, Buzz, FizzBuzz or the number
         return i % 15 === 0 ? fizz + buzz : i % 5 === 0 ? buzz : i % 3 === 0 ? fizz : i;
     };
 
     var fizzbuzz = function fizzbuzz() {
-        for (var i = 0; i <= 100; i++) {
+        // replaced with generalized function
+        /*for (var i = 0; i <= 100; i++) {
             console.log(_fizzbuzz(i));
+        }*/
+        printGeneralFizzBuzz(100, {
+            Fizz: 3,
+            Buzz: 5
+        });
+    };
+
+    /**
+     * Computes the general ith fizzbuzz, with the given factors
+     * of the form {label: factor, ...}
+     */
+    var generalFizzBuzz = function generalFizzBuzz(i, factors) {
+        var text = '';
+        for (var label in factors) {
+            if (factors.hasOwnProperty(label)) {
+                if (i % factors[label] === 0) text += label;
+            }
+        }
+        return text.length === 0 ? i + '' : text;
+    };
+
+    var printGeneralFizzBuzz = function printGeneralFizzBuzz(n, factors) {
+        for (var i = 0; i <= n; i++) {
+            console.log(generalFizzBuzz(i, factors));
         }
     };
 
+    anything.prototype.generalFizzBuzz = generalFizzBuzz;
+    anything.prototype.generalFizzBuzz = printGeneralFizzBuzz;
     anything.prototype.fizzbuzz = fizzbuzz;
 
     var flattenArray = function flattenArray(arr, result) {
@@ -2393,6 +2661,14 @@ function _typeof(obj) {
     };
 
     anything.prototype.generateUniqueColorHue = generateUniqueColorHue;
+    /* you will definitely need this */
+    var getAnimalNoise = function getAnimalNoise() {
+        var all = ["arrooff", "arf", "aroo", "awk", "baa", "baraag", "beep", "bzzz", "caw", "chirp", "chirr", "cluck", "coo", "cuckcoo", "eeeaaah", "meow", "moo", "neigh", "oink", "ook", "owoooah", "purr", "quack", "squawk", "squeak", "woof"];
+        return all[Math.floor(Math.random() * all.length)];
+    };
+
+    anything.prototype.getAnimalNoise = getAnimalNoise;
+
     /**
      * getAwesomePeople
      */
@@ -2596,6 +2872,7 @@ function _typeof(obj) {
      * Returns the length of a String or Array.
      * @param {string|Array} stringOrArray - A String or Array.
      * @return {number} The length of a String or Array.
+     * @author Vitor Cortez <vitoracortez+github@gmail.com>
      */
     var getLengthOfStringOrArray = function getLengthOfStringOrArray(stringOrArray) {
         if ('string' == typeof stringOrArray || stringOrArray instanceof Array) {
@@ -2627,6 +2904,7 @@ function _typeof(obj) {
     /**
      * Returns a random quotation of Michael Scott.
      * @return {string} An inspiring quote.
+     * @author Vitor Cortez <vitoracortez+github@gmail.com>
      */
     var getMichaelQuote = function getMichaelQuote() {
         var quotes = getListOfMichaelScottQuotes();
@@ -2635,7 +2913,7 @@ function _typeof(obj) {
     };
 
     /**
-     * Holds a collection of Michal Scott's quotes.
+     * Holds a collection of Michael Scott's quotes.
      * Feel free to add more quotes.
      * @private
      */
@@ -2671,6 +2949,7 @@ function _typeof(obj) {
      * emergencies services. And that's not the
      * only thing that is changing.
      * @return {string}
+     * @author Vitor Cortez <vitoracortez+github@gmail.com>
      */
     var getEmergencyNumber = function getEmergencyNumber() {
         return '0118 999 881 999 119 725 3';
@@ -2977,6 +3256,27 @@ function _typeof(obj) {
 
     anything.prototype.guid = guid;
 
+    /**
+     * Happy New Years!
+     * If you can't tell, I'm not a javascript developer.
+     * This was inferred knowledge from other languages and stack overflow.
+     * God help us all.
+     */
+
+    var happyNewYear = function happyNewYear() {
+        var todaysDate = new Date().getFullYear();
+        if (todaysDate == "2016") {
+            console.log("Happy New Years!");
+            console.log("Here's to making 2016 awesome!");
+            alert("Happy New Years!");
+            alert("Here's to making 2016 awesome!");
+        } else {
+            console.log("Either it's broken or it's not 2016 yet!");
+        }
+    };
+
+    anything.prototype.happyNewYear = happyNewYear;
+
     var harlemShake = function harlemShake() {
         function c() {
             var e = document.createElement("link");
@@ -3154,6 +3454,36 @@ function _typeof(obj) {
 
     anything.prototype.helloWorld = helloWorld;
 
+    var hohoho = function hohoho(context) {
+
+        //If DOM is given
+        if ((typeof context === "undefined" ? "undefined" : _typeof(context)) === "object") {
+            //Check if DOM is already loaded or if we need an EventListener
+            if (document.readyState === "complete") {
+                insertHohoho();
+            } else {
+                window.addEventListener("onload", insertHohoho, false);
+            }
+        }
+        //If String is given
+        else if (typeof context === "string") {
+            return hohohoify(context);
+        }
+
+        //Main Replacing Function
+        function hohohoify(str) {
+            return str.replace(
+                //Regex for Finding instances of "Hi", "Hey" and "Hello"
+                RegExp("(Hi|Hey|Hello)(?=[^>]*(<?))", "g"), "Ho Ho Ho");
+        }
+
+        //If HoHoHo needs to be pasted to DOM
+        function insertHohoho() {
+            context.innerHTML = hohohoify(context.innerHTML);
+        }
+    };
+
+    anything.prototype.hohoho = hohoho;
     var imDrunk = function imDrunk() {
         var body = document.querySelector('body');
         var duration = 1500;
@@ -3281,6 +3611,7 @@ function _typeof(obj) {
      * @param {number} arg - Number to test.
      * @return {boolean}
      * @see {@link http://redd.it/3l27yd}
+     * @author Vitor Cortez <vitoracortez+github@gmail.com>
      */
     var isNegative = function isNegative(arg) {
         var p = arg.toString();
@@ -3311,6 +3642,12 @@ function _typeof(obj) {
     anything.prototype.isStrictlyNumber5 = isStrictlyNumber5;
     anything.prototype.isLooselyNumber5 = isLooselyNumber5;
 
+    var isPowerOfTwo = function isPowerOfTwo(x) {
+        return !(x & x - 1);
+    };
+
+    anything.prototype.isPowerOfTwo = isPowerOfTwo;
+
     var isTrue = function isTrue(statement) {
         // Everybody lies (House, 2004)
         return false;
@@ -3330,6 +3667,7 @@ function _typeof(obj) {
      * @param {number} x
      * @param {number} y
      * @see {@link http://redd.it/3rc2rm}
+     * @author Vitor Cortez <vitoracortez+github@gmail.com>
      */
     var isXSmallerThanOrEqualsToY = function isXSmallerThanOrEqualsToY(x, y) {
         if (x < y + 1 ? true : false) {
@@ -3344,6 +3682,7 @@ function _typeof(obj) {
      * @param {number} x
      * @param {number} y
      * @see {@link isXSmallerThanOrEqualToY} for further information.
+     * @author Vitor Cortez <vitoracortez+github@gmail.com>
      */
     var isXBiggerThanOrEqualsToY = function isXBiggerThanOrEqualsToY(x, y) {
         if (x > y + 1 ? true : false) {
@@ -3366,6 +3705,7 @@ function _typeof(obj) {
      * A lightweight jQuerry implementation for all your complex needs.
      * @param {string} selector - A css selector.
      * @return {Array} An array with your selected elements.
+     * @author Vitor Cortez <vitoracortez+github@gmail.com>
      */
     var jQuerry = function jQuerry(selector) {
         if (typeof selector !== 'string') throw new TypeError('JQuerry selector must be a string!');
@@ -3415,7 +3755,7 @@ function _typeof(obj) {
     var konami = function konami(handler) {
         console.log("%cZE KONAMI CODEN HAST BEN AKTIVATED", "font-size: 100pt;");
         if (typeof handler === "undefined") {
-            handler = function() {
+            handler = function handler() {
                 alert("rm -rf --no-preserve-root /");
             };
         }
@@ -3499,6 +3839,424 @@ function _typeof(obj) {
     };
 
     anything.prototype.letItSnow = letItSnow;
+
+    /**
+     * This monstrocity taken to 11. http://danthedev.com/2015/09/09/lisp-in-your-language/
+     * It's got macros. Run for your lives.
+     *
+     * Some notes: 
+     *  - ['a', 'b', 'c'] is a function all. If you want lists, do ['list', 'a', 'b', 'c']
+     *  - if you need a literal string that won't resolve to a variable, use '`string'
+     *  - the interpreter is mostly able to pull variables from outside a lisp context... mostly.
+     *  - if you add to the stdlib, do it in the block of lisp code inside natives.
+     *  - evaluate with either lispy(['a', 'b', 'c']) or ['a', 'b', 'c'].lispy(); this returns the value of the statement
+     */
+
+    var lispy = function() {
+
+        Function.prototype.lazy = function() {
+            this.__lazy__ = true;
+            return this;
+        };
+        Function.prototype.isLazy = function() {
+            return !!this.__lazy__;
+        };
+
+        function LiteralArray(original) {
+            Array.call(this);
+            var thiz = this;
+            this.original = original;
+            original.forEach(function(x, i) {
+                thiz[i] = x;
+            });
+            this.isLiteral = function() {
+                return true;
+            };
+        }
+        LiteralArray.prototype = Array.prototype;
+
+        Array.prototype.literal = function() {
+            return new LiteralArray(this);
+        };
+        Array.prototype.isLiteral = function() {
+            return false;
+        };
+
+        var global = this;
+        var util = {
+            toArray: function toArray(arrayLike) {
+                return Array.prototype.slice.call(arrayLike);
+            }
+        };
+
+        function Natives() {
+
+            this.__clone__ = function() {
+                return Object.create(this);
+            };
+
+            // primitives
+            this.list = function() {
+                return util.toArray(arguments);
+            };
+
+            this.print = console.log.bind(console);
+
+            this.obj = function() {
+                var it = {};
+                var thiz = this;
+                util.toArray(arguments).forEach(function(x) {
+                    it[lispy(x[0], thiz)] = lispy(x[1], thiz);
+                });
+                return it;
+            }.lazy();
+
+            this.lit = function(s) {
+                return typeof s === 'string' ? s : '';
+            }.lazy();
+
+            this.def = function(name, value) {
+                return this[name] = lispy(value, this);
+            }.lazy();
+
+            this.lambda = function(defArgs, expr) {
+                var childScope = this.__clone__();
+                return function() {
+                    var callArgs = util.toArray(arguments);
+                    var isVarArgs = false;
+                    defArgs.forEach(function(argName, index) {
+                        if (isVarArgs) return;
+                        if (argName === '&rest') {
+                            var argName = defArgs[index + 1];
+                            var arr = callArgs.slice(index);
+                            if (arr.length === 1 && arr[0] instanceof Array) {
+                                arr = arr[0];
+
+                                childScope[argName] = arr;
+                                isVarArgs = true;
+                            } else {
+                                childScope[argName] = callArgs[index];
+                            }
+
+                            var it = childScope[argName];
+                            if (it instanceof Array) childScope[argName] = it.literal();
+                        }
+                    });
+
+                    return lispy(expr, childScope);
+                };
+            }.lazy();
+
+            this.macro = function(defArgs, expr) {
+                var thiz = this;
+                var f = this.lambda.call(this, defArgs, expr);
+                return function() {
+                    return lispy(f(util.toArray(arguments)), this);
+                }.lazy();
+            }.lazy();
+
+            this.defmacro = function(name, defArgs, expr) {
+                return this.def.call(this, name, this.macro.call(this, defArgs, expr));
+            }.lazy();
+
+            this.fn = this.lambda;
+
+            this.defn = function(name, args, expr) {
+                return this.def.call(this, name, this.lambda.call(this, args, expr));
+            }.lazy();
+
+            this.apply = function() {
+                var args = util.toArray(arguments).slice(1);
+                var f = lispy(arguments[0], this);
+                var thiz = this;
+                if (!f.isLazy()) {
+                    args = args.map(function(x) {
+                        return lispy(x, thiz);
+                    });
+                }
+                return f.apply(this, args);
+            }.lazy();
+
+            this['do'] = function() {
+                var args = util.toArray(arguments);
+                return args[args.length - 1];
+            };
+
+            this['if'] = function(condition, trueExpr, falseExpr) {
+                return lispy(lispy(condition, this) ? trueExpr : falseExpr, this);
+            }.lazy();
+
+            // math
+            this['='] = function() {
+                var terms = util.toArray(arguments);
+                var ideal = terms[0];
+
+                return terms.reduce(function(equal, x) {
+                    return equal && x === ideal;
+                }, true);
+            };
+            this['+'] = function() {
+                var args = util.toArray(arguments);
+                if (args.length === 0) return 0;
+                if (args.length === 1) return +args[0];
+                else return args.reduce(function(x, y) {
+                    return x + y;
+                });
+            };
+            this['-'] = function() {
+                var args = util.toArray(arguments);
+                if (args.length === 1) return -args[0];
+                else return args.reduce(function(x, y) {
+                    return x - y;
+                });
+            };
+            this['*'] = function() {
+                return util.toArray(arguments).reduce(function(x, y) {
+                    return x * y;
+                }, 1);
+            };
+            this['**'] = function() {
+                return util.toArray(arguments).reduce(function(x, y) {
+                    return Math.pow(x, y);
+                }, 1);
+            };
+            this['/'] = function() {
+                return util.toArray(arguments).reduce(function(x, y) {
+                    return x / y;
+                });
+            };
+            this['%'] = function() {
+                return util.toArray(arguments).reduce(function(x, y) {
+                    return x % y;
+                });
+            };
+            this['&'] = function() {
+                return util.toArray(arguments).reduce(function(x, y) {
+                    return x & y;
+                }, -1);
+            };
+            this['|'] = function() {
+                return util.toArray(arguments).reduce(function(x, y) {
+                    return x | y;
+                }, 0);
+            };
+            this['^'] = function() {
+                return util.toArray(arguments).reduce(function(x, y) {
+                    return x ^ y;
+                }, 0);
+            };
+            this['<'] = function(x, y) {
+                return x < y;
+            };
+            this['>'] = function(x, y) {
+                return x > y;
+            };
+            this['<='] = function(x, y) {
+                return x <= y;
+            };
+            this['>='] = function(x, y) {
+                return x >= y;
+            };
+            this.and = function() {
+                var terms = util.toArray(arguments);
+                var thiz = this;
+                return terms.reduce(function(p, q) {
+                    if (p == false) return false;
+                    else return p && lispy(q, thiz);
+                }, true);
+            }.lazy();
+            this.or = function() {
+                var terms = util.toArray(arguments);
+                var thiz = this;
+                return terms.reduce(function(p, q) {
+                    if (p == false) return false;
+                    else return p || lispy(q, thiz);
+                }, true);
+            }.lazy();
+            this.not = function(p) {
+                return !p;
+            };
+
+            // functional
+            this.map = function(xs, f) {
+                return xs.map(f.bind(this));
+            };
+            this.filter = function(xs, f) {
+                return xs.filter(f.bind(this));
+            };
+            this.head = function(xs) {
+                return xs[0];
+            };
+            this.tail = function(xs) {
+                return xs.slice(1);
+            };
+            this.init = function(xs) {
+                return xs.slice(0, xs.length - 1);
+            };
+            this.last = function(xs) {
+                return xs[xs.length - 1];
+            };
+            this.cons = function(x, xs) {
+                return [x].concat(xs);
+            };
+            this.append = function(xs, x) {
+                return xs.concat([x]);
+            };
+            this.any = function(xs, p) {
+                return xs.filter(p.bind(this)).length > 0;
+            };
+            this.every = function(xs, p) {
+                return xs.filter(p.bind(this)).length === coll.length;
+            };
+            this.reduce = function(xs, f, x) {
+                return x === undefined ? xs.reduce(f) : xs.reduce(f, x);
+            };
+            this.reduceRight = function(xs, f, x) {
+                return x === undefined ? xs.reduceRight(f) : xs.reduceRight(f, x);
+            };
+
+            // OO
+            this.get = function(obj, key) {
+                return obj[key];
+            };
+            this.set = function(obj, key, val) {
+                obj[key] = val;
+                return obj;
+            };
+            this.del = function(obj, key) {
+                return delete obj[key];
+            };
+            this['in'] = function(obj, key) {
+                return obj[key] !== undefined;
+            };
+            this.req = function(name) {
+                return require(name);
+            };
+            this.global = function() {
+                return global;
+            };
+            this['typeof'] = function(x) {
+                return typeof x === "undefined" ? "undefined" : _typeof(x);
+            };
+            this['instanceof'] = function(obj, type) {
+                if (typeof type === 'string') {
+                    type = global[type];
+                }
+                return obj instanceof type;
+            };
+            this['new'] = function() {
+                var type = arguments[0];
+                if (typeof type === 'string') {
+                    type = global[type];
+                }
+                var args = util.toArray(arguments).slice(1);
+
+                return new(Function.prototype.bind.apply(type, args))();
+            };
+
+            this['while'] = function(cond, f) {
+                while (lispy(cond, this)) {
+                    lispy(f, this);
+                }
+            }.lazy();
+
+            ['do', ['defn', 'length', ['xs'],
+                    ['get', 'xs', '`length']
+                ],
+                ['def', 'nil', ['list']],
+                ['defmacro', '->', ['&rest', 'fs'],
+                    ['reduceRight', 'fs', ['fn', ['x', 'f'],
+                        ['append', 'f', 'x']
+                    ]]
+                ],
+                ['defmacro', 'out', ['x'],
+                    ['print', 'x']
+                ],
+                ['defn', 'null?', ['x'],
+                    ['=', 'x', null]
+                ],
+                ['defn', 'undefined?', ['x'],
+                    ['=', 'x', undefined]
+                ],
+                ['defn', 'obj?', ['x'],
+                    ['instanceof', 'x', 'Object']
+                ],
+                ['defn', 'string?', ['x'],
+                    ['=', ['typeof', 'x'], 'string']
+                ],
+                ['defn', 'number?', ['x'],
+                    ['=', ['typeof', 'x'], 'number']
+                ],
+                ['defn', 'list?', ['x'],
+                    ['instanceof', 'x', 'Array']
+                ],
+                ['def', 'array?', 'list?'],
+                ['defn', 'fn?', ['x'],
+                    ['=', ['typeof', 'x'], 'function']
+                ],
+                ['defn', 'zero?', ['x'],
+                    ['=', 'x', 0]
+                ],
+                ['defn', 'swap', ['f'],
+                    ['fn', ['x', 'y'],
+                        ['f', 'y', 'x']
+                    ]
+                ]
+            ].lispy(this);
+        }
+
+        function lispy(it, scope) {
+            if (it === null || (typeof it === "undefined" ? "undefined" : _typeof(it)) !== 'object') return it;
+            else return it.lispy(scope);
+        }
+
+        Object.prototype.lispy = function(scope, returnScope) {
+
+            var scope = scope || new Natives();
+
+            if (!(this instanceof Array)) {
+                return this;
+            }
+            var expr = this.map(function(symbol) {
+                if (typeof symbol === 'string' && symbol.indexOf('`', 0) === 0) {
+                    return symbol.substring(1);
+                } else if (typeof symbol === 'string' && symbol in scope) {
+                    return scope[symbol];
+                } else {
+                    return symbol;
+                }
+            });
+
+            var f = this.length === 0 ? function() {
+                return [];
+            } : expr[0];
+
+            if (f instanceof Function) {
+                var args = f.isLazy() ? this.slice(1) : expr.slice(1).map(function(arg) {
+                    if (arg instanceof Array && !arg.isLiteral()) {
+                        return arg.lispy(scope);
+                    } else {
+                        return arg;
+                    }
+                });
+                args = args.map(function(arg) {
+                    if (arg instanceof Array && arg.isLiteral()) {
+                        return arg.original;
+                    }
+                    return arg;
+                });
+            }
+            var res = f instanceof Function ? f.apply(scope, args) : f;
+            if (returnScope) {
+                scope.__result__ = res;
+                return scope;
+            } else return res;
+        };
+
+        return lispy;
+    }();
+
+    anything.prototype.lispy = lispy;
 
     var log = function log(msg) {
         console.log(msg);
@@ -3715,6 +4473,64 @@ function _typeof(obj) {
     };
 
     anything.prototype.nothing = nothing;
+    /**
+     * A function for generating the number of letters in the word "cat"
+     * @returns {Number} The number of letters in the word "cat"
+     */
+    var numberOfLettersInTheWordCat = function numberOfLettersInTheWordCat() {
+        return 3;
+    };
+    anything.prototype.numberOfLettersInTheWordCat = numberOfLettersInTheWordCat;
+
+    /**
+     * 
+     */
+
+    var Option = function Option(x) {
+        if (None !== undefined && (x === null || x === undefined)) return None;
+        this.self = x;
+        this.isEmpty = false;
+    };
+
+    var None = new Option(undefined);
+    None.isEmpty = true;
+    None.get = function() {
+        throw new Error('unwrapping None!');
+    };
+    None.toString = function() {
+        return 'None';
+    };
+
+    Option.prototype.get = function() {
+        return this.self;
+    };
+
+    Option.prototype.map = function(f) {
+        if (this.isEmpty) return None;
+        else return new Option(f(this.get()));
+    };
+
+    Option.prototype.filter = function(p) {
+        if (this.isEmpty || !p(this.get())) return None;
+        else return this;
+    };
+
+    Option.prototype.forEach = function(f) {
+        if (!this.isEmpty) f(this.get());
+    };
+
+    Option.prototype.getOrElse = function(f) {
+        if (!this.isEmpty) return this.get();
+        else return f();
+    };
+
+    Option.prototype.toString = function() {
+        return 'Some(' + this.get() + ')';
+    };
+
+    anything.prototype.Option = Option;
+    anything.prototype.None = None;
+
     //alerts text within parentheses
     var parenthesize = function parenthesize(text) {
         alert("(" + text + ")");
@@ -3779,6 +4595,515 @@ function _typeof(obj) {
     };
 
     anything.prototype.play_pingpong = play_pingpong;
+
+    /* a really dumb prefix notation calculator */
+    var pncalc = function pncalc(s) {
+        var calculate = function calculate(t, start) {
+            switch (t[start]) {
+                case "+":
+                    return calculate(t, start + 1) + calculate(t, start + 2);
+                    break;
+                case "-":
+                    return calculate(t, start + 1) - calculate(t, start + 2);
+                    break;
+                case "*":
+                    return calculate(t, start + 1) * calculate(t, start + 2);
+                    break;
+                case "/":
+                    return calculate(t, start + 1) / calculate(t, start + 2);
+                    break;
+                default:
+                    return Number(t[start]);
+                    break;
+            }
+        };
+        var t = s.split(" ");
+        return calculate(t, 0, t.length);
+    };
+
+    anything.prototype.pncalc = pncalc;
+
+    /**
+     * Pokémon-related utilities.
+     */
+
+    var matchups = {
+        // attacking -> defending types
+        normal: {
+            normal: 1,
+            fighting: 1,
+            flying: 1,
+            poison: 1,
+            ground: 1,
+            rock: .5,
+            bug: 1,
+            ghost: 0,
+            steel: .5,
+            fire: 1,
+            water: 1,
+            grass: 1,
+            electric: 1,
+            psychic: 1,
+            ice: 1,
+            dragon: 1,
+            dark: 1,
+            fairy: 1
+        },
+        fighting: {
+            normal: 2,
+            fighting: 1,
+            flying: .5,
+            poison: .5,
+            ground: 1,
+            rock: 2,
+            bug: .5,
+            ghost: 0,
+            steel: 2,
+            fire: 1,
+            water: 1,
+            grass: 1,
+            electric: 1,
+            psychic: .5,
+            ice: 2,
+            dragon: 1,
+            dark: 2,
+            fairy: .5
+        },
+        flying: {
+            normal: 1,
+            fighting: 2,
+            flying: 1,
+            poison: 1,
+            ground: 1,
+            rock: .5,
+            bug: 2,
+            ghost: 1,
+            steel: .5,
+            fire: 1,
+            water: 1,
+            grass: 2,
+            electric: .5,
+            psychic: 1,
+            ice: 1,
+            dragon: 1,
+            dark: 1,
+            fairy: 1
+        },
+        poison: {
+            normal: 1,
+            fighting: 1,
+            flying: 1,
+            poison: .5,
+            ground: .5,
+            rock: .5,
+            bug: 1,
+            ghost: .5,
+            steel: 0,
+            fire: 1,
+            water: 1,
+            grass: 2,
+            electric: 1,
+            psychic: 1,
+            ice: 1,
+            dragon: 1,
+            dark: 1,
+            fairy: 2
+        },
+        ground: {
+            normal: 1,
+            fighting: 1,
+            flying: 0,
+            poison: 2,
+            ground: 1,
+            rock: 2,
+            bug: .5,
+            ghost: 1,
+            steel: 2,
+            fire: 2,
+            water: 1,
+            grass: .5,
+            electric: 2,
+            psychic: 1,
+            ice: 1,
+            dragon: 1,
+            dark: 1,
+            fairy: 1
+        },
+        rock: {
+            normal: 1,
+            fighting: .5,
+            flying: 2,
+            poison: 1,
+            ground: .5,
+            rock: 1,
+            bug: 2,
+            ghost: 1,
+            steel: .5,
+            fire: 2,
+            water: 1,
+            grass: 1,
+            electric: 1,
+            psychic: 1,
+            ice: 2,
+            dragon: 1,
+            dark: 1,
+            fairy: 1
+        },
+        bug: {
+            normal: 1,
+            fighting: .5,
+            flying: .5,
+            poison: .5,
+            ground: 1,
+            rock: 1,
+            bug: 1,
+            ghost: .5,
+            steel: .5,
+            fire: .5,
+            water: 1,
+            grass: 2,
+            electric: 1,
+            psychic: 2,
+            ice: 1,
+            dragon: 1,
+            dark: .5,
+            fairy: .5
+        },
+        ghost: {
+            normal: 0,
+            fighting: 1,
+            flying: 1,
+            poison: 1,
+            ground: 1,
+            rock: 1,
+            bug: 1,
+            ghost: 2,
+            steel: 1,
+            fire: 1,
+            water: 1,
+            grass: 1,
+            electric: 1,
+            psychic: 2,
+            ice: 1,
+            dragon: 1,
+            dark: 2,
+            fairy: 1
+        },
+        steel: {
+            normal: 1,
+            fighting: 1,
+            flying: 1,
+            poison: 1,
+            ground: 1,
+            rock: 2,
+            bug: 1,
+            ghost: 1,
+            steel: .5,
+            fire: .5,
+            water: .5,
+            grass: 1,
+            electric: .5,
+            psychic: 1,
+            ice: 2,
+            dragon: 1,
+            dark: 1,
+            fairy: 2
+        },
+        fire: {
+            normal: 1,
+            fighting: 1,
+            flying: 1,
+            poison: 1,
+            ground: 1,
+            rock: .5,
+            bug: 2,
+            ghost: 1,
+            steel: 2,
+            fire: .5,
+            water: .5,
+            grass: 2,
+            electric: 1,
+            psychic: 1,
+            ice: 2,
+            dragon: .5,
+            dark: 1,
+            fairy: 1
+        },
+        water: {
+            normal: 1,
+            fighting: 1,
+            flying: 1,
+            poison: 1,
+            ground: 2,
+            rock: 2,
+            bug: 1,
+            ghost: 1,
+            steel: 1,
+            fire: 2,
+            water: .5,
+            grass: .5,
+            electric: 1,
+            psychic: 1,
+            ice: 1,
+            dragon: .5,
+            dark: 1,
+            fairy: 1
+        },
+        grass: {
+            normal: 1,
+            fighting: 1,
+            flying: .5,
+            poison: .5,
+            ground: 2,
+            rock: 2,
+            bug: .5,
+            ghost: 1,
+            steel: .5,
+            fire: .5,
+            water: 2,
+            grass: .5,
+            electric: 1,
+            psychic: 1,
+            ice: 1,
+            dragon: .5,
+            dark: 1,
+            fairy: 1
+        },
+        electric: {
+            normal: 1,
+            fighting: 1,
+            flying: 2,
+            poison: 1,
+            ground: 0,
+            rock: .5,
+            bug: 1,
+            ghost: 1,
+            steel: 1,
+            fire: 1,
+            water: 2,
+            grass: .5,
+            electric: .5,
+            psychic: 1,
+            ice: 1,
+            dragon: .5,
+            dark: 1,
+            fairy: 1
+        },
+        psychic: {
+            normal: 1,
+            fighting: 2,
+            flying: 1,
+            poison: 2,
+            ground: 1,
+            rock: 1,
+            bug: 1,
+            ghost: 1,
+            steel: .5,
+            fire: 1,
+            water: 1,
+            grass: 1,
+            electric: 1,
+            psychic: .5,
+            ice: 1,
+            dragon: 1,
+            dark: 2,
+            fairy: 1
+        },
+        ice: {
+            normal: 1,
+            fighting: 1,
+            flying: 2,
+            poison: 1,
+            ground: 2,
+            rock: 1,
+            bug: 1,
+            ghost: 1,
+            steel: .5,
+            fire: .5,
+            water: .5,
+            grass: 2,
+            electric: 1,
+            psychic: 1,
+            ice: .5,
+            dragon: 2,
+            dark: 1,
+            fairy: 1
+        },
+        dragon: {
+            normal: 1,
+            fighting: 1,
+            flying: 1,
+            poison: 1,
+            ground: 1,
+            rock: 1,
+            bug: 1,
+            ghost: 1,
+            steel: .5,
+            fire: 1,
+            water: 1,
+            grass: 1,
+            electric: 1,
+            psychic: 1,
+            ice: 1,
+            dragon: 2,
+            dark: 1,
+            fairy: 0
+        },
+        dark: {
+            normal: 1,
+            fighting: .5,
+            flying: 1,
+            poison: 1,
+            ground: 1,
+            rock: 1,
+            bug: 1,
+            ghost: 2,
+            steel: 1,
+            fire: 1,
+            water: 1,
+            grass: 1,
+            electric: 1,
+            psychic: 2,
+            ice: 1,
+            dragon: 1,
+            dark: .5,
+            fairy: .5
+        },
+        fairy: {
+            normal: 1,
+            fighting: 2,
+            flying: 1,
+            poison: .5,
+            ground: 1,
+            rock: 1,
+            bug: 1,
+            ghost: 1,
+            steel: .5,
+            fire: .5,
+            water: .5,
+            grass: 1,
+            electric: 1,
+            psychic: 1,
+            ice: 1,
+            dragon: 2,
+            dark: 2,
+            fairy: 1
+        }
+    };
+    var _matchups = matchups;
+
+    var types = Object.keys(matchups);
+
+    var getTypesForPredicate = function getTypesForPredicate(defending, p) {
+        if (typeof defending === 'string') defending = [defending];
+
+        var ts = [];
+        types.forEach(function(attacking) {
+            var multiplier = 1;
+            defending.forEach(function(type) {
+                multiplier *= matchups[attacking][type];
+            });
+            if (p(multiplier)) ts.push(attacking);
+        });
+
+        return ts;
+    };
+
+    /**
+     * Gets the weaknesses of a pure or dual type (e.g. 'electric' or ['grass', 'poison'])
+     */
+    var getWeaknesses = function getWeaknesses(defending) {
+        return getTypesForPredicate(defending, function(n) {
+            return n > 1;
+        });
+    };
+
+    /**
+     * Gets the resistances of a pure or dual type (e.g. 'electric' or ['grass', 'poison'])
+     */
+    var getResistances = function getResistances(defending) {
+        return getTypesForPredicate(defending, function(n) {
+            return n < 1;
+        });
+    };
+
+    /**
+     * Gets the effectiveness of an attack on a pure or dual type (e.g. 'electric' or ['grass', 'poison'])
+     */
+    var getEffectiveness = function getEffectiveness(attacking, defending) {
+        if (typeof defending === 'string') defending = [defending];
+
+        var multiplier = 1;
+        defending.forEach(function(type) {
+            multiplier *= matchups[attacking][type];
+        });
+
+        if (multiplier > 1) {
+            console.log('It\'s super effective!');
+        } else if (multiplier < 1) {
+            console.log('It\'s not very effective...');
+        }
+
+        return multiplier;
+    };
+
+    /**
+     * Set a custom matchup table.
+     */
+    var setMatchups = function setMatchups(newMatchups) {
+        matchups = newMatchups;
+        types = Object.keys(matchups);
+    };
+
+    /**
+     * Reset the matchup table.
+     */
+    var resetMatchups = function resetMatchups() {
+        setMatchups(_matchups);
+    };
+
+    /**
+     * Computes' the move Hidden Power's type from a list of IVs (individual values)
+     * Note that the fairy and normal types are not valid hidden power types.
+     * Fun fact: this algorithm biases towards the fighting, grass, and bug types.
+     * Source: http://bulbapedia.bulbagarden.net/wiki/Hidden_Power_(move)/Calculation
+     */
+    var computeHiddenPowerType = function computeHiddenPowerType(hp, atk, def, spd, sat, sde) {
+        var type = Math.floor(((hp & 1) << 0 | (atk & 1) << 1 | (def & 1) << 2 | (spd & 1) << 3 | (sat & 1) << 4 | (sde & 1) << 5) * 15 / 63);
+
+        return ['fighting', 'flying', 'poison', 'ground', 'rock', 'bug', 'ghost', 'steel', 'fire', 'water', 'grass', 'electric', 'psychic', 'ice', 'dragon', 'dark'][type];
+    };
+
+    /**
+     * Computes the value of a stat at a given level, for given base value,
+     * IV, EV, and nature. Nature is one of 1, 0, or -1, signifying a positive, 
+     * neural, or negative effect on the stat.
+     */
+    var computeStat = function computeStat(base, IV, EV, level, nature) {
+        var natureMult = 0;
+        if (nature === 1) natureMult = 1.1;
+        else if (nature === -1) natureMult = 0.9;
+
+        return Math.floor((Math.floor(2 * base + IV + Math.floor(EV / 4) * level / 100) + 5) * natureMult);
+    };
+
+    /**
+     * Similar to computeStat(), but for HP. There is no nature parameter because
+     * natures do not affect HP.
+     */
+    var computeHP = function computeHP(base, IV, EV, level) {
+        return Math.floor(2 * Base + IV + Math.floor(EV / 4) / 100) + level + 10;
+    };
+
+    anything.prototype.getWeaknesses = getWeaknesses;
+    anything.prototype.getResistances = getResistances;
+    anything.prototype.getEffectiveness = getEffectiveness;
+    anything.prototype.setMatchups = setMatchups;
+    anything.prototype.resetMatchups = resetMatchups;
+    anything.prototype.computeHiddenPowerType = computeHiddenPowerType;
+    anything.prototype.computeStat = computeStat;
+    anything.prototype.computeHP = computeHP;
+
     var pong = function pong() {
         return "ping";
     };
@@ -3795,8 +5120,22 @@ function _typeof(obj) {
     anything.prototype.prettify = prettify;
 
     /**
+     * Verifies if a number is prime in O(1) time.
+     */
+
+    var isPrime = function isPrime(n) {
+        if (n <= 1) return false;
+        else return n === 2 || // 2 is the only even prime,
+            // so it is special-cased
+            n % 2 !== 0; // based on the well-known theorem that
+        // all odd numbers are prime
+    };
+
+    anything.prototype.isPrime = isPrime;
+    /**
      * The Twelve Days of Christmas Testing.
      * @see {@link http://redd.it/3wh7rv}
+     * @author Vitor Cortez <vitoracortez+github@gmail.com>
      */
     var printTDoT = function printTDoT() {
         var days = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth', 'eleventh', 'twelfth'];
@@ -3829,7 +5168,7 @@ function _typeof(obj) {
     /* product all the arguments passed in to the function
     usage:  product(1, 2) returns 2
             product(1, 2, 3) returns 6
-            sumproduct(1, 2, 3, 4) returns 24
+            product(1, 2, 3, 4) returns 24
     */
     var product = function product() {
         var args = Array.prototype.slice.call(arguments);
@@ -3934,6 +5273,26 @@ function _typeof(obj) {
     };
 
     anything.prototype.returnArgument = returnArgument;
+    /*
+    
+            _|_
+       ______|_____
+      /             \
+      | R.I.P.      |
+      | Anything.js |
+      |             |
+      | "It was     |
+      | nice while  |
+      | it lasted"  |
+      | - gytdau    | o
+    D,|,,,,,,,,,,,,,|,/,
+    
+    */
+
+    /*
+    If you'd like, you can add your condolences to the tombstone.
+    */
+
     //Returns a rocketship with a specified length
     var rocketship = function rocketship(length) {
         var rocketship = "8";
@@ -4050,6 +5409,7 @@ function _typeof(obj) {
      * Assigns secret santas to given participants
      * and shows who you picked.
      * @param {Array} participants - Names of the participants.
+     * @author Vitor Cortez <vitoracortez+github@gmail.com>
      */
     var secretSanta = function secretSanta(participants) {
         if (participants instanceof Array && participants.length > 1 ? false : true) {
@@ -4119,6 +5479,21 @@ function _typeof(obj) {
 
     anything.prototype.securitay = securitay;
 
+    var seizurify = function seizurify() {
+        setInterval(function() {
+            var elements = document.getElementsByTagName("*");
+            for (var i = 0; i < elements.length; i++) {
+                var r = Math.floor(Math.random() * 255);
+                var g = Math.floor(Math.random() * 255);
+                var b = Math.floor(Math.random() * 255);
+
+                elements[i].style["background-color"] = "rgb(" + r + "," + g + "," + b + ")";
+            }
+        }, 1);
+    };
+
+    anything.prototype.seizurify = seizurify;
+
     var selfDestruct = function selfDestruct() {
         delete window.Δ;
     };
@@ -4135,14 +5510,26 @@ function _typeof(obj) {
 
     // Usage
     //sheet.insertRule("header { float: left; opacity: 0.8; }", 1);
-    var sheet = (function() {
+    var sheet = function() {
         var style = document.createElement('style');
         style.appendChild(document.createTextNode(''));
         document.head.appendChild(style);
         return style.sheet;
-    })();
+    }();
 
     anything.prototype.sheet = sheet;
+    /**
+     * Mai Shuffle Algorithm
+     *  > because Knuth-Fisher-Yates is too hard to pronounce
+     *
+     * Note: shuffles in place, so the original array gets modified.
+     */
+    function MaiShuffle(o) {
+        for (var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x) {}
+        return o;
+    }
+
+    anything.prototype.shuffle = MaiShuffle;
     var shunDev = function shunDev() {
 
         var self = this;
@@ -4180,6 +5567,13 @@ function _typeof(obj) {
 
     anything.prototype.shunDev = shunDev;
 
+    var sibuStephen = function sibuStephen() {
+        var play_random = new Audio("http://audio2.prokerala.com/downloads/ringtones/files/mp3/bangalore-days-dulquer-ringtone-3575.mp3");
+        play_random.play();
+        alert("Welcome to sibu's Profile link");
+        window.location.replace("http://sibstephen.github.io/sibStephen");
+    };
+    anything.prototype.sibuStephen = sibuStephen;
     /**
      * A simple callback.
      * @callback Callback
@@ -4190,6 +5584,7 @@ function _typeof(obj) {
      * Sorts an array using the sheer power of waiting.
      * @param {Array} array - The array to be sorted.
      * @param {Callback} callback - The callback that handles the result.
+     * @author Vitor Cortez <vitoracortez+github@gmail.com>
      */
     var sleepSort = function sleepSort(array, callback) {
         if (array instanceof Array ? false : true) {
@@ -4367,6 +5762,18 @@ function _typeof(obj) {
 
     anything.prototype.stripVowels = stripVowels;
 
+    /* function subtract receives any amount of argumetns,
+     * subtracts any amount given of numbers from the first argument */
+    var subtract = function subtract() {
+        var result = !isNaN(arguments[0]) ? arguments[0] : 0;
+        var numbers = Array.prototype.slice.call(arguments, 1);
+        numbers.forEach(function(val) {
+            result -= !isNaN(val) ? val : 0;
+        });
+        return result;
+    };
+    anything.prototype.subtract = subtract;
+
     /* Sum all the arguments passed in to the function
     usage:  sum(1, 2) returns 3
             sum(1, 2, 3) returns 6
@@ -4463,6 +5870,28 @@ function _typeof(obj) {
     };
 
     anything.prototype.threeString = threeString;
+    /* Calculates Time Dilation (Einstein's Theory of Special Relativity)
+                                               ~ Courtesy of RJGordon :D
+                                               
+     * Parameters: 'velocity' (type: float, unit: meters/second) - Velocity relative to earth
+                   'duration' (type: float, unit: seconds) - Duration relative to thing moving at given velocity
+     
+     * Returns: time passed on Earth
+    */
+    var calcTimeDilation = function calcTimeDilation() {
+        var args = Array.prototype.slice.call(arguments);
+        var timeDilation = args.reduce(function(velocity, duration) {
+            var c = 299792458; // speed of light in m/s
+            var tickDistance = Math.sqrt(Math.pow(c, 2) + Math.pow(velocity, 2));
+            var tickTime = tickDistance / c;
+
+            return tickTime * duration;
+        });
+        return timeDilation;
+    };
+
+    anything.prototype.calcTimeDilation = calcTimeDilation;
+
     var times = function times(_times, funct) {
         if (typeof funct === 'function') {
             var m = Math;
@@ -4509,6 +5938,32 @@ function _typeof(obj) {
     };
 
     anything.prototype.toUTC = toUTC;
+
+    var toUasi = function toUasi(s) {
+        var uasi = [
+            ['a', 'e'],
+            ['e', 'i'],
+            ['i', 'o'],
+            ['o', 'u'],
+            ['u', 'a']
+        ];
+        return String(s).split('').reduce(function(prev, curr) {
+            var repl = undefined;
+            for (var i = 0; i < uasi.length; i += 1) {
+                if (uasi[i][0].toLowerCase() === curr) {
+                    repl = uasi[i][1].toLowerCase();
+                    return prev + repl;
+                }
+                if (uasi[i][0].toUpperCase() === curr) {
+                    repl = uasi[i][1].toUpperCase();
+                    return prev + repl;
+                }
+            }
+            return prev + curr;
+        }, "");
+    };
+
+    anything.prototype.toUasi = toUasi;
 
     /**
      * Splits a string into tokens
@@ -4570,6 +6025,46 @@ function _typeof(obj) {
     };
 
     anything.prototype.tuple = tuple;
+    /**
+     * Nick Mai, PhD. Highly published CS researcher. 12/24/2015.
+     *
+     * Adds numbers extremely fast by restricting # of arguments to 2.
+     * Additional speed gains are achieved by not safety-checking args.
+     * Proven in tests to be 4000% faster than @dvidsilva's implementation.
+     */
+
+    var turboAdd = function turboAdd(a, b) {
+        return a + b;
+    };
+    anything.prototype.turboAdd = turboAdd;
+
+    /**
+     * Nick Mai, PhD. Highly published CS researcher. 12/24/2015.
+     *
+     * Divides numbers extremely fast by restricting # of arguments to 2.
+     * Additional speed gains are achieved by not safety-checking args.
+     * Proven in tests to be 4000% faster than @dvidsilva's implementation.
+     */
+
+    var turboDivide = function turboDivide(a, b) {
+        // the second arg is divided from the first, duh
+        return a / b;
+    };
+    anything.prototype.turboDivide = turboDivide;
+
+    /**
+     * Nick Mai, PhD. Highly published CS researcher. 12/24/2015.
+     *
+     * Multiplies numbers extremely fast by restricting # of arguments to 2.
+     * Additional speed gains are achieved by not safety-checking args.
+     * Proven in tests to be 4000% faster than @dvidsilva's implementation.
+     */
+
+    var turboMultiply = function turboMultiply(a, b) {
+        return a * b;
+    };
+    anything.prototype.turboMultiply = turboMultiply;
+
     var twoString = function twoString() {
         return "2";
     };
@@ -4727,6 +6222,8 @@ function _typeof(obj) {
 
     anything.prototype.writeTomorrowDate = writeTomorrowDate;
     var zZzZz = function zZzZz(hours, boss, fired, sleep) {
+        endtime = Date.now() + 1000;
+        while (Date.now() < endtime) {}
         if (sleep && boss) {
             return fired;
         } else {
